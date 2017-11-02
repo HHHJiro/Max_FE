@@ -35,6 +35,19 @@ const config = {
         }, {
           loader: 'sass-loader'
         }])
+      },
+      {
+        test: /\.less$/,
+        use: Ex.extract([{
+          loader: 'css-loader',
+          options: {
+            minimize: true // css压缩
+          }
+        }, {
+          loader: 'postcss-loader'
+        }, {
+          loader: 'less-loader'
+        }])
       }
     ]
   },

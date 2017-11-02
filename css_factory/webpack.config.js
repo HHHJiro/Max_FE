@@ -44,6 +44,26 @@ const config = {
             sourceMap: true
           }
         }])
+      },
+      {
+        test: /\.less$/,
+        use: Ex.extract([{
+          loader: 'css-loader',
+          options: {
+            // minimize: true, // css压缩
+            sourceMap: true
+          }
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true
+          }
+        }, {
+          loader: 'less-loader',
+          options: {
+            sourceMap: true
+          }
+        }])
       }
     ]
   },
