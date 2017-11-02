@@ -10,7 +10,7 @@ style_css.css 为entry.config.js 指定
 
 生成: npm run build 文件在dist目录
 
-[x] css
-[x] scss
-[x] build 文件压缩
-[ ] less
+* [x] css
+* [x] scss
+* [x] build 文件压缩
+* [ ] less
